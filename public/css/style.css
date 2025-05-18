@@ -1,0 +1,66 @@
+/* Reset default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(#ffffff, #ff8989);
+    text-align: center;
+  }
+  
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+  }
+  
+  .buttons {
+    margin: 1rem 0;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .cta-button {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin:  1rem;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  
+  .cta-button:hover {
+    opacity: 0.8;
+  }
+  
+  .mockup {
+    margin-top: 2rem;
+    max-width: 300px;
+    max-height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+  }
+  
