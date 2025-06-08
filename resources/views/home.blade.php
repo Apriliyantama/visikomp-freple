@@ -22,9 +22,6 @@
                     <a href="{{ route('sample.download') }}" class="cta-button">Try Sample</a>
                 </div>
             </form>
-            {{-- <form action="{{ route('sample.download') }}" method="GET">
-                <button class="cta-button" type="submit">Try Sample</button>
-            </form> --}}
         </div>
 
         <img src="{{ asset('images/apple.png') }}" alt="App Preview" class="mockup">
