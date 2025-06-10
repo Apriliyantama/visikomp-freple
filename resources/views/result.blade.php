@@ -85,6 +85,6 @@
     }
   
     window.addEventListener('DOMContentLoaded', loadModelAndPredict);
-  </script>  
+  </script> 
 </body>
 </html>

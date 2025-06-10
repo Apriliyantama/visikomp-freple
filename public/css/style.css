@@ -1,66 +1,116 @@
 /* Reset default */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(#ffffff, #ff8989);
-    text-align: center;
-  }
-  
-  .hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-  }
-  
-  h1 {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 2rem;
-  }
-  
-  .buttons {
-    margin: 1rem 0;
-  }
-  
-  .button-group {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-bottom: 1rem;
-  }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Hapus efek scroll */
+}
 
-  .cta-button {
-    background-color: black;
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    border-radius: 12px;
-    font-size: 1rem;
-    font-weight: bold;
-    margin:  1rem;
-    cursor: pointer;
-    display: inline-block;
-    transition: 0.3s;
-    text-decoration: none;
-  }
-  
-  .cta-button:hover {
-    opacity: 0.8;
-  }
-  
-  .mockup {
-    margin-top: 2rem;
-    max-width: 300px;
-    max-height: 400px;
-    border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-  }
-  
+.main-content {
+  height: 100vh; /* 100% tinggi layar */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #88304E, #F7374F); /* Sesuai warna kamu */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(#88304E, #F7374F);
+}
+
+/* Header / Navbar */
+.navbar {
+  background-color: #2c2c2c;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  font-weight: 800;
+  line-height: 1;
+  font-size: 1.2rem;
+}
+
+.nav-text {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-size: 1.8rem;
+  margin: 2rem 0 1.5rem;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+/* White Content Box */
+.content-box {
+  background-color: white;
+  border-radius: 30px;
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1000px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+/* Apple image */
+.mockup {
+  width: 250px;
+  height: auto;
+}
+
+/* Tombol kanan */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cta-button {
+  background-color: #2c2c2c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  opacity: 0.8;
+}

@@ -9,22 +9,30 @@
 </head>
 
 <body>
+    <!-- Header/Navbar -->
+    <header class="navbar">
+        <div class="logo">FRE<br>PLE</div>
+        <div class="nav-text">Visi Komputer &nbsp;&nbsp; Kel.3</div>
+    </header>
+
+    <!-- Hero Section -->
     <div class="hero">
-        <h2>Fastest Way to See the freshness<br>level of apples with detection</h2>
+        <h2>"Cara Cepat melihat tingkat<br>kematangan apel dengan deteksi"</h2>
 
-        <div class="buttons">
-            <form action="{{ route('upload') }}" method="POST" enctype="multipart/form-data">
-                @csrf
-                <div class="button-group">
-                    <input type="file" name="image" id="image" accept="image/*" onchange="this.form.submit()"
-                        hidden>
-                    <label for="image" class="cta-button">Input image</label>
-                    <a href="{{ route('sample.download') }}" class="cta-button">Try Sample</a>
-                </div>
-            </form>
+        <div class="content-box">
+            <img src="{{ asset('images/apple.png') }}" alt="App Preview" class="mockup">
+
+            <div class="buttons">
+                <form action="{{ route('upload') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
+                    <div class="button-group">
+                        <input type="file" name="image" id="image" accept="image/*" onchange="this.form.submit()" hidden>
+                        <label for="image" class="cta-button">Input Gambar</label>
+                        <a href="{{ route('sample.download') }}" class="cta-button">Coba Sampel</a>
+                    </div>
+                </form>
+            </div>
         </div>
-
-        <img src="{{ asset('images/apple.png') }}" alt="App Preview" class="mockup">
     </div>
 </body>
 

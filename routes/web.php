@@ -18,11 +18,11 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::post('/upload', function (Request $request){
+Route::post('/upload', function (Request $request) {
     $path = $request->file('image')->store('uploads', 'public');
-    return view ('result', ['image' => $path]);
+    return view('result', ['image' => $path]);
 })->name('upload');
 
-Route::get('/sample', function() {
-    return response()->download(public_path('images/sample.png'));
+Route::get('/download-test', function () {
+    return response()->download(public_path('images/test.png'));
 })->name('sample.download');
